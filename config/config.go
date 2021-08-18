@@ -110,7 +110,7 @@ func Get() *BotConfig {
 		useHttpsPtr := flag.Bool("useHttps", false, "Whether or not to use TLS for webserver. Required for webhook mode if not using a reverse proxy")
 		certPathPtr := flag.String("certPath", "", "Path of your SSL certificate when using webhook mode")
 		keyPathPtr := flag.String("keyPath", "", "Path of your private SSL key when using webhook mode")
-		portPtr := flag.Int("port", 8080, "Port for the webserver to listen on")
+		portPtr := flag.Int("port", 8081, "Port for the webserver to listen on")
 		proxyPtr := flag.String("proxy", "", "Proxy for poll mode, e.g. 'socks5://127.0.0.01:1080'")
 		reqRateLimitPtr := flag.Int("rateLimit", 100, "Max number of requests per recipient per hour")
 		cmdRateLimitPtr := flag.Int("cmdRateLimit", 10, "Max number of chat commands to execute per hour")
