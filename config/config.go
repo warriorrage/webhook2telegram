@@ -104,7 +104,7 @@ func readBlacklist(path string) []string {
 
 func Get() *BotConfig {
 	if cfg == nil {
-		tokenPtr := flag.String("token", "", "Your Telegram Bot Token from Botfather")
+		tokenPtr := flag.String("token", "02ef482f-2fa4-4aca-b76b-1cae2a11fa2e", "Your Telegram Bot Token from Botfather")
 		modePtr := flag.String("mode", "poll", "Update mode ('poll' for development, 'webhook' for production)")
 		baseUrlPtr := flag.String("baseUrl", "", "A relative URL different from '/', required to run the bot on a subpath. E.g. to run bot under 'https://exmaple.org/wh2tg' set baseUrl to '/wh2tg'")
 		useHttpsPtr := flag.Bool("useHttps", false, "Whether or not to use TLS for webserver. Required for webhook mode if not using a reverse proxy")
